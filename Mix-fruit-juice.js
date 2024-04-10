@@ -29,3 +29,5 @@ function mixFruit (arr) {
   let prices = {banana:5, orange:5, apple:5, lemon:5, grapes:5, avocado:7, strawberry:7, mango:7};
   return Math.round(arr.reduce((a,b)=> a += prices[b.toLowerCase()] || 9,0)/arr.length);
 }
+
+// or
