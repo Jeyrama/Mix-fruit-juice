@@ -18,8 +18,14 @@ Input:
   There is no case of an empty array input.
 
 Example:
-  ['Mango', 'Banana', 'Avocado'] //the price of this juice bottle is (7+5+7)/3 = $6($6.333333...)
+  ['Mango', 'Banana', 'Avocado'] 
+  The price of this juice bottle is (7+5+7)/3 = $6($6.333333...).
 */
 
 
 // Solution
+
+function mixFruit (arr) {
+  let prices = {banana:5, orange:5, apple:5, lemon:5, grapes:5, avocado:7, strawberry:7, mango:7};
+  return Math.round(arr.reduce((a,b)=> a += prices[b.toLowerCase()] || 9,0)/arr.length);
+}
