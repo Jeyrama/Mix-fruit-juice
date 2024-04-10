@@ -31,3 +31,19 @@ function mixFruit (arr) {
 }
 
 // or
+
+function mixFruit(arr) {
+  reg = ["banana", "orange", "apple", "lemon", "grapes"];
+  spec = ["avocado","strawberry", "mango"];
+  total = 0;
+  for (let i = 0; i < arr.length; i ++) {
+    if (reg.includes(arr[i].toLowerCase())) {
+      total += 5;
+    } else if (spec.includes(arr[i].toLowerCase())) {
+        total += 7;
+    } else {
+        total += 9;
+    }
+  }
+  return Math.round(total/arr.length);
+}
