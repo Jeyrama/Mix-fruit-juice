@@ -20,3 +20,6 @@ Input:
 Example:
   ['Mango', 'Banana', 'Avocado'] //the price of this juice bottle is (7+5+7)/3 = $6($6.333333...)
 */
+
+
+// Solution
